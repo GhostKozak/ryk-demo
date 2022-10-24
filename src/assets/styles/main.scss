@@ -1,0 +1,23 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/theme';
+
+
+@import 'base/normalize';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/navigation';
+
+@import 'components/aboutsection';
+@import 'components/boxsection';
+@import 'components/slider';
+@import 'components/staticpageheader';
+@import 'components/projectlistslider';
+@import 'components/teklifformu';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';

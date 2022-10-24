@@ -1,0 +1,51 @@
+.content {
+
+    .container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+        @media (min-width: $lg) {
+            grid-template-columns: 0.4fr 1.6fr;
+            grid-template-rows: none;
+        }
+    }
+
+    .side-nav {
+        padding: 2rem 0rem;
+        order: 2;
+
+        @media (min-width: $lg) {
+            order: 1;
+        }
+
+        a {
+            margin-bottom: 10px;
+            text-decoration: none;
+            padding: .5rem;
+            font-size: 1rem;
+            color: black;
+            display: block;
+            border-bottom: 2px solid #f0ab27;
+            transition: 1s all ease;
+
+            &:hover {
+                padding-left: 2rem;
+            }
+        }
+    }
+
+}
+
+.page {
+    padding: 2rem 1rem;
+    order: 1;
+
+    @media (min-width: $lg) {
+        order: 2;
+    }
+
+    a {
+        text-decoration: none;
+        color: #a04401;
+    }
+}

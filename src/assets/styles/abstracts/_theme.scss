@@ -1,0 +1,91 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.button-primary {
+    border: none;
+    background: none;
+    padding: 1rem 2rem;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.clear {
+    clear: both;
+    overflow: auto;
+
+    &:before,
+    &:after {
+        clear: both;
+        display: table;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: normal !important;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+blockquote {
+    margin: 0 0 1rem;
+    padding: 1rem 1.8rem;
+    background: linear-gradient(to right, rgba(240, 171, 39, .4) 0%, transparent 90%);
+    border-left: .8rem solid #f0ab27;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+
+    @media (min-width: $sm) {
+        max-width: $sm;
+    }
+
+    @media (min-width: $md) {
+        max-width: $md;
+    }
+
+    @media (min-width: $lg) {
+        max-width: $lg;
+    }
+
+    @media (min-width: $xl) {
+        max-width: $xl;
+    }
+
+    @media (min-width: $xxl) {
+        max-width: $xxl;
+    }
+}
+
+.swiper-button-next {
+    color: #F0AB27;
+}
+
+.swiper-button-prev {
+    color: #F0AB27;
+}

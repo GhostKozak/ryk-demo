@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project 1",
+      "description": "Lorem ipsum dolar amet",
+      "img": "https://w.wallhaven.cc/full/9m/wallhaven-9mjoy1.png"
+    },
+    {
+      "id": 2,
+      "title": "Project 2",
+      "description": "Lorem ipsum dolar amet",
+      "img": "https://w.wallhaven.cc/full/zy/wallhaven-zygeko.jpg"
+    }
+  ]
+}

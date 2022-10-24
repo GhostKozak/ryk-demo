@@ -1,0 +1,122 @@
+.box {
+    margin: 3rem 0;
+    overflow: hidden;
+
+    @media (min-width: $lg) {
+        margin: 8rem 0;
+    }
+
+    .container {
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;
+
+        @media (min-width: $lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        min-height: 35rem;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    ul {
+        padding: 10px 0px;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+            svg {
+                fill: #F0AB27;
+                vertical-align: text-bottom;
+            }
+
+            font-weight: bold;
+        }
+    }
+
+    button {
+        border: 1px solid #F0AB27;
+        background-color: white;
+        border-radius: 6px;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+        color: rgb(20, 20, 20);
+
+        &:hover {
+            border-color: black;
+            background-color: black;
+            color: white;
+            transition: 0.3s all ease-out;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 32px;
+        text-decoration: underline;
+        text-decoration-color: #F0AB27;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .block1,
+    .block4 {
+        height: auto;
+    }
+
+    .block2,
+    .block3 {
+        height: auto;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        padding: 4rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: all 0.5s ease-out;
+        background-color: white;
+    }
+
+    .block1 {
+        order: 2;
+    }
+
+    .block2 {
+        order: 1;
+    }
+
+    .block3 {
+        order: 3;
+    }
+
+    .block4 {
+        order: 4;
+    }
+
+    @media (min-width: $lg) {
+        .block1 {
+            order: 1;
+        }
+
+        .block2 {
+            order: 2;
+        }
+
+        .block3 {
+            order: 3;
+        }
+
+        .block4 {
+            order: 4;
+        }
+    }
+}

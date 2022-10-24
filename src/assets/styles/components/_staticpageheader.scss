@@ -1,0 +1,53 @@
+.staticpage-banner {
+    height: 7rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $lg) {
+        height: 20rem;
+    }
+
+    .bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #f0ab27, $alpha: .3);
+    }
+
+    h1,
+    .title {
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: normal;
+        text-transform: uppercase;
+        line-height: normal !important;
+        display: block;
+
+        @media (min-width: $md) {
+            font-size: 2.5rem;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 4rem;
+            line-height: 1.5rem;
+        }
+    }
+}

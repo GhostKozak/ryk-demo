@@ -1,0 +1,143 @@
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    position: sticky;
+    top: -2.5rem;
+    z-index: 50;
+
+    &__top {
+        background-color: #F0AB27;
+        padding: 0.5rem 0;
+        color: white;
+
+        @media (min-width: $lg) {}
+
+        &__links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        &__container {
+            display: flex;
+            gap: .2rem;
+            flex-direction: column;
+            align-items: center;
+
+            @media (min-width: $lg) {
+                flex-direction: row;
+            }
+        }
+
+        &__info {
+            svg {
+                vertical-align: middle;
+            }
+        }
+
+        //&__address {}
+
+        //&__email {}
+
+        //&__phone {}
+
+        &__social {
+            display: none;
+            gap: 0.5rem;
+
+            @media (min-width: $lg) {
+                margin-left: auto;
+                display: flex;
+            }
+
+            a {
+                color: inherit;
+                @include transitionTime(0.1);
+
+                &.facebook:hover {
+                    color: #3B5998;
+                }
+
+                &.linkedin:hover {
+                    color: #4875B4;
+                }
+
+                &.twitter:hover {
+                    color: #33CCFF;
+                }
+
+                &.youtube:hover {
+                    color: #FF3333;
+                }
+
+                &.pinterest:hover {
+                    color: #910101;
+                }
+
+                &.instagram:hover {
+                    color: #7232bd;
+                }
+            }
+        }
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        max-width: 8rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+
+    }
+
+    &__toggle {
+        margin: auto;
+        margin-right: 0px;
+        border: none;
+        background: none;
+        font-size: 25px;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        cursor: pointer;
+        display: block;
+
+        @media (min-width: 1024px) {
+            display: none;
+        }
+
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            transition: 0.3s all ease-out;
+        }
+
+        .close {
+            opacity: 0;
+        }
+
+        &.active {
+            .close {
+                opacity: 1;
+            }
+
+            .bars {
+                opacity: 0;
+            }
+        }
+    }
+
+    .menu {}
+
+}

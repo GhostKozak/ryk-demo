@@ -1,0 +1,8 @@
+@mixin transitionTime($s: 0.5) {
+    transition: all 0.5s ease-out;
+}
+
+@mixin clear {
+    clear: both;
+    overflow: auto;
+}
